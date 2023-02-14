@@ -259,7 +259,10 @@ section {
 }
 
 .advantages .thumb {
-  padding: 24px 100px;
+  min-height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 8px;
 
   background-color: var(--cloud);
@@ -315,9 +318,11 @@ section {
 }
 
 .team .social-link {
-  display: block;
-  max-height: 40px;
-  padding: 12px;
+  display: flex;
+  min-height: 40px;
+  min-width: 40px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--iris);
 }
@@ -343,8 +348,11 @@ section {
 }
 
 .customer-link {
-  display: block;
-  padding: 16px 32px;
+  color: var(--light-slate);
+  display: flex;
+  min-height: 88px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
 }
@@ -352,11 +360,12 @@ section {
 .customers .icon {
   width: 104px;
   height: 56px;
-  fill: var(--light-slate);
+  fill: currentColor;
 }
 
-.customers .icon:hover {
-  fill: var(--accent-color);
+.customer-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* FOOTER */
@@ -404,9 +413,11 @@ section {
 }
 
 .main-footer .social-link {
-  display: block;
-  max-height: 40px;
-  padding: 8px;
+  display: flex;
+  min-height: 40px;
+  min-width: 40px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--primary-color);
 }
